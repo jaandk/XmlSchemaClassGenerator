@@ -211,6 +211,12 @@ namespace XmlSchemaClassGenerator
             set { _configuration.EnableUpaCheck = value; }
         }
 
+        public bool InitializeCollections
+        {
+            get { return _configuration.InitializeCollections; }
+            set { _configuration.InitializeCollections = value; }
+        }
+
         public void Generate(IEnumerable<string> files)
         {
             var set = new XmlSchemaSet();
