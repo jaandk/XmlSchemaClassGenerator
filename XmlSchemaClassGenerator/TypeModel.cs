@@ -938,7 +938,7 @@ namespace XmlSchemaClassGenerator
             member.CustomAttributes.AddRange(attributes);
 
             // initialize List<>
-            if (IsCollection || isArray || (IsList && IsAttribute))
+            if (Configuration.InitializeCollections && (IsCollection || isArray || (IsList && IsAttribute)))
             {
                 var constructor = typeDeclaration.Members.OfType<CodeConstructor>().FirstOrDefault();
                 if (constructor == null)

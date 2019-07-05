@@ -227,5 +227,7 @@ namespace XmlSchemaClassGenerator
         /// </code>
         /// </summary>
         public bool GenerateComplexTypesForCollections { get; set; } = false;
+
+        public bool InitializeCollections { get; set; } = true;
     }
 }
