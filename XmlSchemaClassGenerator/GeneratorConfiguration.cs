@@ -228,6 +228,9 @@ namespace XmlSchemaClassGenerator
         /// </summary>
         public bool GenerateComplexTypesForCollections { get; set; } = false;
 
+        /// <summary>
+        /// Option to not initialize collection. Default is true
+        /// </summary>
         public bool InitializeCollections { get; set; } = true;
     }
 }
